@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <rect width="1600" height="900" fill="#111111"/>
+  <g opacity="0.18" fill="none" stroke="#c8a951" stroke-width="2">
+    <path d="M0 180 C220 120, 400 120, 620 180 C840 240, 1020 240, 1240 180 C1420 130, 1500 120, 1600 150"/>
+    <path d="M0 360 C220 300, 400 300, 620 360 C840 420, 1020 420, 1240 360 C1420 310, 1500 300, 1600 330"/>
+    <path d="M0 540 C220 480, 400 480, 620 540 C840 600, 1020 600, 1240 540 C1420 490, 1500 480, 1600 510"/>
+    <path d="M0 720 C220 660, 400 660, 620 720 C840 780, 1020 780, 1240 720 C1420 670, 1500 660, 1600 690"/>
+  </g>
+  <g opacity="0.28" fill="none" stroke="#c8a951" stroke-width="1.5">
+    <circle cx="240" cy="220" r="90"/>
+    <circle cx="720" cy="260" r="120"/>
+    <circle cx="1240" cy="220" r="90"/>
+    <circle cx="400" cy="620" r="100"/>
+    <circle cx="1040" cy="650" r="120"/>
+  </g>
+  <g opacity="0.2" fill="none" stroke="#f5f1e8" stroke-width="1">
+    <path d="M120 120 L220 220"/>
+    <path d="M1380 120 L1280 220"/>
+    <path d="M240 760 L340 660"/>
+    <path d="M1360 760 L1260 660"/>
+  </g>
+</svg>

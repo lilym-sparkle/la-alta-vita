@@ -1,0 +1,78 @@
+/* Breakfast-specific styles for La Alta Vita */
+
+/* Hero */
+.breakfast-hero {
+    /* Pattern over hero image with subtle dark overlay */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)),
+        url("images/menu-pattern.png"),
+        url("images/breakfast-hero.jpg");
+
+    /* Gradient | Pattern | Hero Image */
+    background-size: cover, cover, cover;
+
+    background-position:
+        center,
+        center,
+        center;
+
+    background-repeat: no-repeat, no-repeat, no-repeat;
+
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 520px;
+    box-sizing: border-box;
+}
+
+.breakfast-hero .menu-hero-content {
+    text-align: center;
+    max-width: 1000px;
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+.breakfast-hero .menu-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    margin: 0.25rem 0 0.5rem;
+    line-height: 1.05;
+}
+
+.menu-tagline {
+    color: #d4af37;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 720px) {
+    .breakfast-hero {
+        padding: 3.5rem 0;
+        min-height: 360px;
+    }
+
+    .breakfast-hero .menu-hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .menu-tagline {
+        font-size: 0.9rem;
+    }
+}
+
+/* Food cards tweaks for breakfast layout */
+.food-grid .food-card img {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.food-title h3 {
+    margin: 0 0 6px;
+}
+

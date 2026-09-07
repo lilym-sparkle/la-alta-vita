@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Alta Vita</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+</head>
+
+<body class="home-page">
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        <img src="images/altavita logo.png" alt="La Alta Vita">
+    </a>
+
+    <nav class="nav-links" id="nav-links">
+        <a href="index.html#hero" class="active">HOME</a>
+        <a href="index.html#about">ABOUT</a>
+        <a href="menu.html">EXPLORE MENU</a>
+        <a href="index.html#reviews">REVIEWS</a>
+        <a href="index.html#gallery">GALLERY</a>
+        <a href="index.html#contact">CONTACT</a>
+    </nav>
+
+    <button
+        id="mobileMenuBtn"
+        class="hamburger"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+<!-- HERO -->
+
+
+
+<section id="hero">
+
+    <div class="hero-content">
+
+        <h1>La Alta Vita</h1>
+
+        <h3>Authentic Italian Fine Dining</h3>
+
+        <p>Crafted with Passion, Served with Love</p>
+
+        <div class="hero-buttons">
+            <a href="menu.html" class="btn explore-btn">
+                Explore Menu
+            </a>
+
+            
+        </div>
+
+    </div>
+
+</section>
+<section id="contact">
+<!-- =========================
+     CALL & ORDER
+========================= -->
+
+<section id="call-order">
+
+    <div class="section-title">
+
+        <h4>Call &amp; Order</h4>
+
+        <h2>Pick up on the way</h2>
+
+    </div>
+
+
+    <div class="contact-container">
+
+
+        <!-- LEFT -->
+
+        <div class="contact-image">
+
+            <div class="about-image">
+            <img src="images/ordereat.webp" alt="Restaurant">
+        </div>
+
+        </div>
+
+
+        <!-- RIGHT -->
+
+        <div class="contact-content">
+
+            <h1 class="order-message">
+                Your order is just one call away!
+            </h1>
+
+<ul class="order-description">
+
+    <li>
+        Choose your favourite from our menu.
+    </li>
+
+    <li>
+        Give us a call to confirm your order.
+    </li>
+
+    <li>
+        Pick it up on your way, catch your flight,
+        and enjoy your journey with a taste of Alta Vita.
+    </li>
+
+</ul>
+
+
+            <!-- VISIT US -->
+
+            <div class="visit-box">
+
+                <button
+                    type="button"
+                    class="visit-button"
+                    onclick="toggleVisit()"
+                >
+
+                    <span>VISIT US</span>
+
+                    <span class="visit-arrow">></span>
+
+                </button>
+
+
+                <div class="visit-details">
+
+                    <p>
+                        Terminal 1, Opposite Gate 12
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>
+<!-- ABOUT -->
+
+        <section id="about">
+
+    <div class="section-title">
+        <h4>OUR STORY</h4>
+        <h2>Experience the Art of Italian Hospitality</h2>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-image">
+            <img src="images/altavita.webp" alt="Restaurant">
+        </div>
+
+        <div class="about-content">
+
+            <p>
+             Step into La Alta Vita, established in 2016 under the Avolta brand, and discover the art of authentic Italian dining at Terminal 1, opposite Gate 12. Every plate is thoughtfully prepared with premium ingredients, traditional recipes, and a passion for exceptional taste. With elegant surroundings, attentive service, and unforgettable flavours, La Alta Vita turns every visit into a truly memorable experience.
+
+            </p>
+
+           
+
+
+            <a href="menu.html" class="btn">
+    Explore Menu
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- EMPTY SECTIONS -->
+
+<section id="signature">
+
+    <div class="section-title">
+        <h4>FROM OUR KITCHEN</h4>
+        <h2>Our Signature Dishes</h2>
+    </div>
+
+    <div class="menu-container">
+
+        <div class="menu-card">
+
+            <img src="images/Lamb Chops.webp" alt="Lamb Chops">
+
+            <div class="overlay">
+                <p>Fresh handmade pasta in creamy truffle parmesan sauce.</p>
+            </div>
+
+            <h3>Truffle Fettuccine</h3>
+
+        </div>
+
+        <div class="menu-card">
+
+            <img src="images/Salmone Al Pesto.webp" alt="Margherita Pizza">
+
+            <div class="overlay">
+                <p>Classic wood-fired pizza with fresh mozzarella & basil.</p>
+            </div>
+
+            <h3>Margherita Pizza</h3>
+
+        </div>
+
+        <div class="menu-card">
+
+            <img src="images/Ragu Di Agnelloo.webp" alt="Classic Tiramisu">
+
+            <div class="overlay">
+                <p>Layers of espresso-soaked sponge with mascarpone cream.</p>
+            </div>
+
+            <h3>Classic Tiramisu</h3>
+
+        </div>
+
+        <div class="menu-card extra-dishes">
+
+            <img src="images/Aglio Olio.webp" alt="Classic Lasagna">
+
+            <div class="overlay">
+                <p>Layers of pasta, rich ragù, and creamy béchamel.</p>
+            </div>
+
+            <h3>Classic Lasagna</h3>
+
+        </div>
+
+        <div class="menu-card extra-dishes">
+
+            <img src="images/Gamberi.webp" alt="Creamy Risotto">
+
+            <div class="overlay">
+                <p>Creamy Italian risotto prepared with carefully selected ingredients.</p>
+            </div>
+
+            <h3>Creamy Risotto</h3>
+
+        </div>
+
+        <div class="menu-card extra-dishes">
+
+            <img src="images/Pizza Margherita.webp" alt="Italian Bruschetta">
+
+            <div class="overlay">
+                <p>Toasted bread topped with ripe tomatoes, basil, and olive oil.</p>
+            </div>
+
+            <h3>Italian Bruschetta</h3>
+
+        </div>
+
+    </div>
+
+    <div class="signature-buttons">
+
+        <button class="view-more-btn" id="viewMoreBtn" type="button" onclick="showMoreDishes()">
+            VIEW MORE <span>›</span>
+        </button>
+
+        <a href="menu.html" class="view-full-menu-btn">
+            VIEW FULL MENU
+        </a>
+
+    </div>
+
+</section>
+
+
+
+    
+</section>
+
+<section id="gallery">
+
+    <div class="section-title">
+        <h4>GALLERY</h4>
+        <h2>Moments at La Alta Vita</h2>
+    </div>
+
+    <div class="gallery-slider">
+
+        <div class="gallery-track">
+
+            <img src="gallery1.jpg" alt="">
+            <img src="gallery2.jpg" alt="">
+            <img src="gallery3.jpg" alt="">
+            <img src="gallery4.jpg" alt="">
+            <img src="gallery5.jpg" alt="">
+            <img src="gallery6.jpg" alt="">
+
+            <!-- Duplicate -->
+
+            <img src="gallery1.jpg" alt="">
+            <img src="gallery2.jpg" alt="">
+            <img src="gallery3.jpg" alt="">
+            <img src="gallery4.jpg" alt="">
+            <img src="gallery5.jpg" alt="">
+            <img src="gallery6.jpg" alt="">
+
+        </div>
+
+    </div>
+
+</section>
+<section id="reviews"></section>
+<section id="reviews">
+
+    <div class="section-title">
+        <h4>TESTIMONIALS</h4>
+        <h2>What Our Guests Say</h2>
+    </div>
+
+    <div class="reviews-container">
+
+        <div class="review-card">
+
+            <img src="person1.jpg" alt="">
+
+            <h3>Sophia Williams</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Every dish was exceptional. The ambiance was elegant,
+                and the service made our evening unforgettable."
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <img src="person2.jpg" alt="">
+
+            <h3>Ethan Carter</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "Authentic Italian flavors with a modern touch.
+                The truffle pasta was absolutely delicious."
+            </p>
+
+        </div>
+
+        <div class="review-card">
+
+            <img src="person3.jpg" alt="">
+
+            <h3>Isabella Rossi</h3>
+
+            <div class="stars">
+                ★★★★★
+            </div>
+
+            <p>
+                "A luxurious dining experience.
+                We'll definitely be coming back."
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h2>La Alta Vita</h2>
+
+    <p>Authentic Italian Fine Dining</p>
+
+    <p class="copyright">
+        © 2026 La Alta Vita. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

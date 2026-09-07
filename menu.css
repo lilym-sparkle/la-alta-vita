@@ -1,0 +1,876 @@
+/* ========================================
+   MENU PAGE - GENERAL
+======================================== */
+
+body {
+    background: #111;
+    color: #f5f1e8;
+}
+
+/* ========================================
+   MENU HERO
+======================================== */
+.menu-page .menu-hero {
+    min-height: 55vh;
+    padding: 40px 20px;
+
+    background-image: url("images/menu-pattern.png") !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.menu-page .menu-hero-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 10px 20px;
+    text-align: center;
+    transform: translateY(-360px);
+}
+
+.flatbread-hero,
+.fresh-dough-hero {
+    min-height: 55vh;
+    padding: 40px 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)),
+        url("images/menu-pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pasta-hero {
+    min-height: 55vh;
+    padding: 40px 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)),
+        url("images/menu-pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.risotto-hero {
+    min-height: 55vh;
+    padding: 40px 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)),
+        url("images/menu-pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breakfast-hero,
+.beer-hero,
+.cocktails-hero,
+.main-course-hero,
+.mocktails-hero,
+.spirits-hero,
+.wines-hero {
+    min-height: 55vh;
+    padding: 40px 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)),
+        url("images/menu-pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desserts-hero {
+    min-height: 55vh;
+    padding: 40px 20px;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.35)),
+        url("images/menu-pattern.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.small-heading {
+    color: #c8a951;
+    letter-spacing: 5px;
+    font-size: 14px;
+    margin: 25px 25px 15px;
+}
+
+.menu-page .menu-hero h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 0;
+    transform: translateY(20px);
+}
+
+.menu-tagline {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-style: italic;
+    color: #ddd;
+    margin: 15px 0 0;
+}
+
+/* GOLD LINE */
+
+.gold-line {
+    width: 100px;
+    height: 2px;
+    background: #c8a951;
+    margin: 20px auto;
+}
+/* ========================================
+   MENU INTRO
+======================================== */
+
+.menu-intro {
+    text-align: center;
+    max-width: 700px;
+
+    margin: 80px auto 50px;
+
+    padding: 0 20px;
+}
+
+
+.section-label {
+    color: #c8a951;
+    letter-spacing: 4px;
+    font-size: 13px;
+}
+
+
+.menu-intro h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    font-weight: 500;
+
+    margin: 15px 0;
+}
+
+
+.menu-intro p:last-child {
+    color: #bbb;
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   MENU CATEGORY CARDS
+======================================== */
+
+.menu-categories {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 40px 30px 100px;
+}
+
+
+.category-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.category-card {
+    background: #181818;
+
+    border: 1px solid #5c4a20;
+
+    transition: 0.4s;
+
+    overflow: hidden;
+}
+
+
+.category-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #c8a951;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.5);
+}
+
+
+/* ========================================
+   CATEGORY IMAGES
+======================================== */
+
+.category-image {
+    height: 280px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Breakfast image */
+
+.breakfast-image {
+    background-image:
+        url("images/breakfast.jpg");
+}
+
+
+/* Rest of day image */
+
+.rest-day-image {
+    background-image:
+        url("images/rest-of-day.jpg");
+}
+
+
+/* Beverages image */
+
+.beverages-image {
+    background-image:
+        url("images/beverages.jpg");
+}
+
+
+/* ========================================
+   CATEGORY CONTENT
+======================================== */
+
+.category-content {
+    padding: 30px;
+
+    text-align: center;
+}
+
+
+.category-number {
+    color: #c8a951;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 18px;
+}
+
+
+.category-content h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    margin: 10px 0;
+}
+
+
+.category-time {
+    color: #c8a951;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+.category-content p:not(
+    .category-number
+):not(
+    .category-time
+) {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+
+    margin: 20px 0 25px;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.menu-button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border: 1px solid #c8a951;
+
+    color: #c8a951;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    transition: 0.3s;
+}
+
+
+.menu-button:hover {
+    background: #c8a951;
+
+    color: #111;
+}
+
+
+/* ========================================
+   FOOD MENU PAGE
+======================================== */
+
+.menu-page .menu-hero {
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: url("menu-pattern.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    padding-top: 80px;
+}
+
+.food-menu {
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 80px 30px;
+}
+
+
+.food-menu-heading {
+    text-align: center;
+
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+    min-width: 0;
+}
+
+
+.food-menu-heading h2 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 42px;
+
+    font-weight: 500;
+
+    margin: 15px 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+
+.food-menu-heading p:last-child {
+    color: #aaa;
+
+    line-height: 1.8;
+}
+
+
+/* ========================================
+   PASTA & ADD-ONS
+======================================== */
+
+.menu-options {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 45px auto 30px;
+    max-width: 900px;
+}
+
+.option-box {
+    flex: 1;
+    background: #171717;
+    padding: 22px 25px;
+    box-sizing: border-box;
+}
+
+.option-box h3 {
+    color: #c9a34e;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin: 0 0 15px;
+}
+
+.option-box p {
+    color: #d0d0d0;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.pasta-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.pasta-type {
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fffaf2;
+    border: 1px solid #d6b98c;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pasta-type img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.pasta-type span {
+    display: block;
+    padding: 14px;
+    color: #3b2a20;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.pasta-type:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.pasta-type:hover span {
+    color: #a47745;
+}
+
+@media (max-width: 768px) {
+    .pasta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .pasta-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pasta-addons {
+    margin-top: 40px;
+}
+
+.addon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #d0d0d0;
+    font-size: 14px;
+    padding: 7px 0;
+    border-bottom: 1px solid #292929;
+}
+
+.addon:last-child {
+    border-bottom: none;
+}
+
+.addon strong {
+    color: #c9a34e;
+    font-weight: 500;
+}
+
+.addon-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px;
+    margin: 10px 0;
+    border: 1px solid #d6b98c;
+    border-radius: 8px;
+    background: #C8A951;
+    color: #3b2a20;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.addon-item:hover {
+    background: #3b2a20;
+    color: #fffaf2;
+    transform: translateY(-2px);
+}
+
+.addon-price {
+    font-weight: 600;
+}
+
+
+/* ========================================
+   BACK TO MENU
+======================================== */
+
+.back-menu {
+    display: block;
+    width: fit-content;
+    margin: 35px auto 0;
+    padding: 10px 18px;
+    border: 1px solid #c9a34e;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.back-menu:hover {
+    background: #c9a34e;
+    color: #111;
+}
+
+
+/* ========================================
+   FOOD GRID
+======================================== */
+
+.food-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+.food-card {
+    background: #181818;
+
+    border: 1px solid #3d331b;
+
+    overflow: hidden;
+    min-width: 0;
+
+    transition: 0.4s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+
+    border-color: #c8a951;
+}
+
+
+.food-card img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* ========================================
+   FOOD INFORMATION
+======================================== */
+
+.food-info {
+    padding: 25px;
+}
+
+
+.food-title {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 15px;
+    min-width: 0;
+}
+
+
+.food-title h3 {
+    font-family: "Playfair Display", serif;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+
+.food-title span {
+    color: #c8a951;
+
+    font-size: 17px;
+
+    flex-shrink: 0;
+}
+
+
+.food-info p {
+    color: #aaa;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    margin: 15px 0;
+}
+
+
+.food-info small {
+    color: #777;
+
+    font-size: 11px;
+
+    letter-spacing: 1px;
+}
+
+
+/* ========================================
+   BACK TO MENU
+======================================== */
+
+.back-to-menu {
+    text-align: center;
+
+    padding: 30px 20px 80px;
+}
+
+
+/* ========================================
+   QUOTE
+======================================== */
+
+.menu-quote {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    border-top: 1px solid #332b19;
+}
+
+
+.menu-quote p {
+    font-family: "Playfair Display", serif;
+
+    font-size: 25px;
+
+    font-style: italic;
+
+    color: #ddd;
+}
+
+
+.menu-quote span {
+    color: #c8a951;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    text-align: center;
+
+    padding: 30px;
+
+    background: #080808;
+
+    color: #777;
+
+    font-size: 12px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .category-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .food-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .menu-page .menu-hero h1 {
+        font-size: 55px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .menu-page .menu-hero {
+        min-height: 45vh;
+    }
+
+
+    .menu-page .menu-hero h1 {
+        font-size: 40px;
+    }
+
+
+    .menu-tagline {
+        font-size: 18px;
+    }
+
+
+    .menu-intro h2 {
+        font-size: 32px;
+    }
+
+
+    .category-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .food-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .food-menu {
+        padding: 60px 20px;
+    }
+
+
+    .category-image {
+        height: 230px;
+    }
+
+
+    .food-card img {
+        height: 230px;
+    }
+
+    .menu-options {
+        flex-direction: column;
+        margin: 35px 20px 25px;
+    }
+
+    .option-box {
+        width: 100%;
+    }
+
+}
+.call-order-container{
+    display:flex;
+    justify-content:center;
+}
+
+.order-card{
+    width:100%;
+    max-width:1000px;
+    background:#181818;
+    border:1px solid #5c4a20;
+    text-align:center;
+    padding:45px 60px;
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+    transition:.5s ease;
+}
+
+.order-card-main{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.order-icon{
+    color:#C8A951;
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.order-card-main h3{
+    color:#fff;
+    font-size:28px;
+    margin-bottom:12px;
+}
+
+.order-card-main p{
+    color:#aaa;
+    font-size:16px;
+    line-height:1.7;
+    max-width:600px;
+    margin-bottom:25px;
+}
+
+.place-order-btn{
+    padding:14px 30px;
+    background:transparent;
+    border:1px solid #C8A951;
+    color:#C8A951;
+    font-family:"Playfair Display",serif;
+    font-size:14px;
+    letter-spacing:1.5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.place-order-btn:hover{
+    background:#C8A951;
+    color:#111;
+}

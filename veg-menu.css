@@ -1,0 +1,161 @@
+/* =========================
+   VEGETARIAN MENU
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    color: #fff;
+    font-family: "Playfair Display", serif;
+}
+
+/* Menu Section */
+.full-menu {
+    min-height: 100vh;
+    padding: 140px 8% 80px;
+}
+
+/* Page Title */
+.full-menu > h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 3.5rem;
+    color: #C8A951;
+    margin-bottom: 10px;
+}
+
+.menu-subtitle {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 60px;
+}
+
+/* Menu Grid */
+.menu-grid {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+/* Category */
+.menu-category {
+    border-top: 1px solid #C8A951;
+    padding-top: 20px;
+}
+
+.menu-category h2 {
+    font-family: "Playfair Display", serif;
+    color: #C8A951;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Individual Food Item */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #333;
+}
+
+.menu-item h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+
+.menu-item p {
+    color: #aaa;
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+.menu-item span {
+    color: #C8A951;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+/* Back Button */
+.back-btn {
+    display: block;
+    width: fit-content;
+
+    margin: 60px auto 0;
+    padding: 12px 28px;
+
+    color: #C8A951;
+    border: 1px solid #C8A951;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #C8A951;
+    color: #111;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 768px) {
+
+    .full-menu {
+        padding: 120px 5% 60px;
+    }
+
+    .full-menu > h1 {
+        font-size: 2.7rem;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .menu-category h2 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .full-menu > h1 {
+        font-size: 2.2rem;
+    }
+
+    .menu-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1rem;
+    }
+
+    .menu-item p {
+        font-size: 0.75rem;
+    }
+
+    .menu-item span {
+        font-size: 0.85rem;
+    }
+}
