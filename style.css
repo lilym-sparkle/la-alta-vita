@@ -124,7 +124,7 @@ header {
 
 .hero-content{
     max-width:1000px;
-    animation:fadeUp 1.2s ease;
+    animation:fadeUp 0.6s ease forwards;
 }
 
 .hero-content h4{
@@ -2026,6 +2026,46 @@ footer {
         font-size: 31px;
     }
 
+}
+
+/* =========================
+   MOBILE - PICK UP IMAGE
+========================= */
+@media (max-width: 768px) {
+
+    #call-order .contact-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #call-order .contact-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 30px;
+    }
+
+    #call-order .contact-image .about-image {
+        width: 90%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    #call-order .contact-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin: 0 auto;
+    }
+
+    #call-order .contact-content {
+        width: 90%;
+        text-align: center;
+    }
 }
         
     #call-order .hello-circle span {
