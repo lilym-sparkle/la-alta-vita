@@ -243,7 +243,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, {
         threshold: 0,
-        rootMargin: '200px 0px'
+        rootMargin: '0px'
     });
 
     animatedElements.forEach((element) => observer.observe(element));
