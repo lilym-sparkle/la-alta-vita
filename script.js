@@ -83,11 +83,38 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    hamburger.addEventListener("click", function () {
+    function closeMenu() {
+        nav.classList.remove("active");
+        hamburger.classList.remove("active");
+        hamburger.setAttribute("aria-expanded", "false");
+    }
 
-        nav.classList.toggle("active");
-        hamburger.classList.toggle("active");
+    hamburger.addEventListener("click", function (event) {
+        event.stopPropagation();
 
+        const isOpen = nav.classList.contains("active");
+
+        if (isOpen) {
+            closeMenu();
+            return;
+        }
+
+        nav.classList.add("active");
+        hamburger.classList.add("active");
+        hamburger.setAttribute("aria-expanded", "true");
+    });
+
+    document.addEventListener("click", function (event) {
+        const clickedInsideNav = nav.contains(event.target);
+        const clickedHamburger = hamburger.contains(event.target);
+
+        if (!clickedInsideNav && !clickedHamburger && nav.classList.contains("active")) {
+            closeMenu();
+        }
+    });
+
+    nav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", closeMenu);
     });
 
 });

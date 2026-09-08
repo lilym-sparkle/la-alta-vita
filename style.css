@@ -3646,13 +3646,24 @@ body.home-page > footer {
         transition-delay: 0s !important;
     }
 
-    /* HERO stays animated */
+    /* HERO stays animated but with reduced mobile drag */
+    #hero {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+
     #hero .hero-content {
-        animation: fadeUp 0.25s ease forwards !important;
+        animation: fadeUp 0.18s ease-out forwards !important;
+        will-change: opacity, transform;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
     }
 
     /* Keep hero button heartbeat */
     #hero .explore-btn {
         animation: heartbeat 1.5s ease-in-out infinite !important;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
     }
 }
