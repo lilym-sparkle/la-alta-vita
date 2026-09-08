@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
             entry.target.classList.toggle('show', entry.isIntersecting);
         });
     }, {
-        threshold:0.12,
-        rootMargin:'0px 0px -80px 0px'
+        threshold: 0.05,
+        rootMargin: '0px'
     });
 
     animatedElements.forEach((element) => observer.observe(element));
