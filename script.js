@@ -196,9 +196,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    staggerElements.forEach((element, index) => {
+    staggerElements.forEach((element) => {
         element.classList.add('scroll-stagger');
-        element.style.transitionDelay = `${(index % 3) * 100}ms`;
+        element.style.transitionDelay = '0ms';
     });
 
     const animatedElements = document.querySelectorAll(
@@ -215,8 +215,8 @@ document.addEventListener('DOMContentLoaded', () => {
             entry.target.classList.toggle('show', entry.isIntersecting);
         });
     }, {
-        threshold: 0.05,
-        rootMargin: '0px'
+        threshold: 0,
+        rootMargin: '200px 0px'
     });
 
     animatedElements.forEach((element) => observer.observe(element));
@@ -355,4 +355,25 @@ function showMoreDishes() {
 
     viewMoreBtn.style.display = 'none';
 }
+
+// Make the entire menu card clickable, not just the button
+window.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.food-card').forEach((card) => {
+        const menuLink = card.querySelector('a.menu-button');
+
+        if (!menuLink) {
+            return;
+        }
+
+        card.style.cursor = 'pointer';
+
+        card.addEventListener('click', (event) => {
+            if (event.target.closest('a, button, input, textarea, select')) {
+                return;
+            }
+
+            menuLink.click();
+        });
+    });
+});
 
