@@ -605,6 +605,10 @@ to{
     transition:.5s;
 }
 
+.aglio-olio-card img{
+    object-position:85% center;
+}
+
 .menu-card:hover img{
     transform:scale(1.08);
 }
