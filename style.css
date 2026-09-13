@@ -2867,6 +2867,13 @@ footer {
     margin-bottom: 0;
 }
 
+#call-order .order-description .phone-number {
+    color: #C8A951;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+}
+
 
 .logo {
     display: flex;
